@@ -3,7 +3,7 @@ pluginManagement {
         google()
         gradlePluginPortal()
         maven {
-            name = "aliucord"
+            name = "bugcord"
             url = uri("https://maven.aliucord.com/releases")
         }
     }
@@ -15,10 +15,10 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            name = "aliucord"
+            name = "bugcord"
             url = uri("https://maven.aliucord.com/releases")
         }
     }
 }
 
-rootProject.name = "webrtc"
+rootProject.name = "Bugcord-WebRTC"

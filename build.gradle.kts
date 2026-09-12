@@ -42,21 +42,11 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("release") {
-                groupId = "com.aliucord"
-                artifactId = project.name
+                groupId = "com.bugcord"
+                artifactId = "Bugcordwebrtc"
                 version = "1.0.1"
 
                 from(components["release"])
-            }
-        }
-
-        repositories {
-            maven {
-                url = uri("https://maven.aliucord.com/releases")
-                credentials {
-                    username = System.getenv("MAVEN_RELEASE_USERNAME")
-                    password = System.getenv("MAVEN_RELEASE_PASSWORD")
-                }
             }
         }
     }
