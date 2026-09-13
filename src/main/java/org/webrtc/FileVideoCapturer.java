@@ -195,6 +195,11 @@ public class FileVideoCapturer implements VideoCapturer {
   }
 
   @Override
+  public boolean isCapturing() {
+    return false;
+  }
+
+  @Override
   public boolean isScreencast() {
     return false;
   }

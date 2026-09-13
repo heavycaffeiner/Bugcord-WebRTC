@@ -373,6 +373,13 @@ abstract class CameraCapturer implements CameraVideoCapturer {
   }
 
   @Override
+  public boolean isCapturing() {
+    synchronized (stateLock) {
+      return sessionOpening || currentSession != null;
+    }
+  }
+
+  @Override
   public boolean isScreencast() {
     return false;
   }
